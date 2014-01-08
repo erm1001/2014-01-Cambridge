@@ -2,6 +2,7 @@
 w = read.table('1999_01_19', header=FALSE, comment.char ="#", sep = "\t")
 w
 summary(w)
+# Extract header names from file.
 hd <- readLines(f)
 hd <- hd[grep("#", hd)]
 hd <- sub("#", "", hd)
